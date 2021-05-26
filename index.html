@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){$("#xx").hide();
+$.post('https://script.google.com/macros/s/AKfycbxJQqwCD2H1Udo0HKltGk1k7LnPXcvu5QJXyNnLLwnn2Cy1f4nxTDCNd_4OI2eQtQzssA/exec',
+    {msg:'網頁發訊息'},
+    function(e){
+        console.log(e);
+});
+     $("#xx1").hide();
+  });
+});
+
+
+});
+</script>
+</head>
+<body>
+
+<h2>这是标题</h2>
+<p>这是一个段落。</p>
+<p id='xx'>这是另外一个段落。</p>
+<button>点我</button>
+<button id="b1">to Line</button>
+<p id='xx1'>这是另外一个段落。</p>
